@@ -17,8 +17,8 @@ npm install is-on-tinkoff-invest
 const quotes = require('is-on-tinkoff-invest')
 
 const main = async () => {
-	const stocks = await quotes.getTinkoffStocks()
-	const etfs = await quotes.getTinkoffEtfs()
+    const stocks = await quotes.getTinkoffStocks()
+    const etfs = await quotes.getTinkoffEtfs()
     const bonds = await quotes.getTinkoffBonds()
     const currencies = await quotes.getTinkoffCurrencies()
     const all = await quotes.getTinkoffAllQuotes()
