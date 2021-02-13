@@ -1,9 +1,12 @@
 const {
-    getAllStocks
-} = require('./lib/getStocks')
+    getAllStocks,
+    getAllEtfs,
+    getAllBonds,
+    getAllCurrencies
+} = require('./lib/tinkoff')
 
 const main = async () => {
-    const result = await getAllStocks()
+    const result = await getAllEtfs()
     console.log(result)
 }
 
