@@ -77,7 +77,7 @@ const getTinkoffCurrencies = async () => {
  * @async
  * @return {Promise.<Array.<quote>>}
  */
-const getTinkoffQuotes = async () => {
+const getTinkoffAllQuotes = async () => {
     return Array.prototype.concat(await getTinkoffCurrencies(), await getTinkoffBonds(), await getTinkoffEtfs(), await getTinkoffStocks())
 }
 
@@ -86,5 +86,5 @@ module.exports = {
     getTinkoffEtfs,
     getTinkoffBonds,
     getTinkoffCurrencies,
-    getTinkoffQuotes
+    getTinkoffAllQuotes
 }
